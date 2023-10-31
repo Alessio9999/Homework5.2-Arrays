@@ -22,7 +22,7 @@ public class Main {
         System.out.println("\nЗадача 1:");
         int[] arr = generateRandomArray(100_000, 100_000, 30);
         System.out.println(Arrays.toString(arr));
-        long sum = 0;
+        int sum = 0;
         for (int element:arr)
             sum += element;
         System.out.println ("Сумма трат за месяц составила " + sum + " рублей");
@@ -46,10 +46,10 @@ public class Main {
         System.out.println("\nЗадача 3:");
         int[] arr = generateRandomArray(100_000, 100_000, 30);
         System.out.println(Arrays.toString(arr));
-        long sum = 0;
+        int sum = 0;
         for (int element:arr)
             sum += element;
-        float averagePerDay = sum / 30f;
+        float averagePerDay = (float) sum / arr.length;
         System.out.println ("Средняя сумма трат в день за месяц составила "+ averagePerDay +" рублей");
     }
 
