@@ -57,7 +57,7 @@ public class Main {
         System.out.println("\nЗадача 4:");
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         int lastIndex = reverseFullName.length-1;
-        for (int i = 0; i < reverseFullName.length; i++)
+        for (int i = 0; i <= lastIndex; i++)
             System.out.print(reverseFullName[lastIndex-i]);
     }
 }
